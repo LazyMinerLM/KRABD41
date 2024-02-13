@@ -1,0 +1,65 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="UPIlyaM41.MainWindow"
+        Title="UPIlyaM41">
+   <Grid>
+     <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock VerticalAlignment="Center"
+                           x:Name="FilterCabinet" Margin ="10 10 0 0">Фильтрация по кабинету: </TextBlock>
+                <ComboBox Name="CmbCabinet" Width="200" Margin ="10 10 0 0" 
+                          x:CompileBindings="False"
+                SelectionChanged="CmbCabinet_OnSelectionChanged">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding cabinet}"></TextBlock>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+        </StackPanel> 
+            
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Margin = "10 12 0 0">Поиск фамилии</TextBlock>
+                    <TextBox Name="SearchSurname" Width="200" Margin ="33 10 0 0"></TextBox>
+                    <StackPanel Margin="10 12 00 0">
+                        <Button Name="Add" Content="Добавить" Click="AddData"></Button>
+                    </StackPanel>
+                    <StackPanel Margin="10 12 00 0">
+                        <Button Name="Update" Content="Изменить" Click="EditData"></Button>
+                    </StackPanel>
+                    <StackPanel Margin="10 12 00 0">
+                        <Button Name="Delete" Content="Удалить" Click="DeleteData"></Button>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Margin="10 13 0 10">
+                    <Button Name="Search" Content="Поиск по фамилии" Click="Search_OnClick"></Button>
+                </StackPanel>
+            </StackPanel> 
+            
+        <DataGrid Name="PlanGrid" x:CompileBindings="False" Margin ="10 20 0 0" Height="250">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding id}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding surname}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Имя" Binding="{Binding name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Отчество" Binding="{Binding middleName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата урока" Binding="{Binding data}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Кабинет" Binding="{Binding cabinet}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+            
+            <StackPanel Orientation="Horizontal" Margin="10 20 20 0">
+                <StackPanel Margin="100 0 00 0">
+                <Button Name="Reset" Content="Сброс фильтра" Click="Reset_OnClick"></Button>
+                </StackPanel>
+                <StackPanel Margin="100 0 00 0">
+                        <Button Name="Back" Content="Назад" Click="Back_OnClick"></Button>
+                    </StackPanel>
+                </StackPanel>
+            
+        </StackPanel>
+    </Grid>
+</Window>

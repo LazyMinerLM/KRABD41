@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="UPIlyaM41.EditUser"
+        Title="EditUser">
+    <Grid>
+        <UniformGrid Columns="1">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "10 35 0 0">ID: </TextBlock>
+                <TextBox Name="ID" x:CompileBindings="False" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "10 35 0 0">Логин: </TextBlock>
+                <TextBox Name="LogInTxt" x:CompileBindings="False" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "10 35 0 0">Пароль: </TextBlock>
+                <TextBox Name="PasswordTxt" x:CompileBindings="False" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="Save" Content="Сохранить" Click="Save_OnClick"  Margin = "10 15 0 20"></Button>
+                <Button Name="Back" Content="Назад" Click="CloseAddEdit"  Margin = "50 15 0 20"></Button>
+            </StackPanel>
+        </UniformGrid>
+    </Grid>
+</Window>

@@ -1,0 +1,57 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="UPIlyaM41.AddForm"
+        Title="Add">
+    <Grid>
+        <UniformGrid Columns="1">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "10 35 0 0">Код учителя: </TextBlock>
+                <TextBox Name="TeacherId" x:CompileBindings="False" Width="200" Height="5" Margin = "10 0 0 0"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "10 35 0 0">Дата (ГГГГ.ММ.ДД ЧЧ:ММ): </TextBlock>
+                <MaskedTextBox Name = "Data" Mask="0000/00/00 00:00" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "10 35 0 0">Дисциплина: </TextBlock>
+                <ComboBox Name="CmbSubject" Width="200" Margin ="10 10 0 0" 
+                          x:CompileBindings="False">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding subject}"></TextBlock>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "10 35 0 0">Класс: </TextBlock>
+                <ComboBox Name="CmbClass" Width="200" Margin ="10 10 0 0" 
+                          x:CompileBindings="False">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding className}"></TextBlock>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "10 35 0 0">Кабинет: </TextBlock>
+                <ComboBox Name="CmbCabinet" Width="200" Margin ="10 10 0 0" 
+                          x:CompileBindings="False">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding cabinet}"></TextBlock>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </StackPanel>
+           <StackPanel Orientation="Horizontal">
+                <Button Name="Save" Content="Сохранить" Click="Save_OnClick"  Margin = "10 15 0 20"></Button>
+                <Button Name="Back" Content="Назад" Click="CloseAdd"  Margin = "50 15 0 20"></Button>
+            </StackPanel>
+        </UniformGrid>
+    </Grid>
+</Window>

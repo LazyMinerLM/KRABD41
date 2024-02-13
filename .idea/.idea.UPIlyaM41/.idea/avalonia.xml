@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="UPIlyaM41/AddEdit.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/AddForm.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/AddUser.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/App.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/Authorization.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/CabinetTable.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/Classes.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/ClassesTable.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/DevelWin.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/DevelopWin.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/Edit.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/EditUser.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/LogIn.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/Main.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/MainWindow.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/ScoresTable.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/StudentsTable.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/SubjectsTable.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/Teachers.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/TeachersTable.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/UsersTable.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+        <entry key="UPIlyaM41/Vhod.axaml" value="UPIlyaM41/UPIlyaM41.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

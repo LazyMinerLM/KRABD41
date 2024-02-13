@@ -1,0 +1,52 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="UPIlyaM41.Main"
+        Title="Main">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" Margin="10 20 20 0">
+                <StackPanel Margin="100 0 00 0">
+                    <Button Name="CabinetsTable" Content="Кабинеты" Click="Cabinets_OnClick"></Button>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 20 20 0">
+                <StackPanel Margin="100 0 00 0">
+                    <Button Name="PlanTable" Content="Расписание" Click="Plan_OnClick"></Button>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 20 20 0">
+                <StackPanel Margin="100 0 00 0">
+                    <Button Name="ClassesTable" Content="Классы" Click="Classes_OnClick"></Button>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 20 20 0">
+                <StackPanel Margin="100 0 00 0">
+                    <Button Name="ScoresTable" Content="Оценки" Click="Scores_OnClick"></Button>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 20 20 0">
+                <StackPanel Margin="100 0 00 0">
+                    <Button Name="StudentsTable" Content="Ученики" Click="Students_OnClick"></Button>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 20 20 0">
+                <StackPanel Margin="100 0 00 0">
+                    <Button Name="SubjectsTable" Content="Предметы" Click="Subjects_OnClick"></Button>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 20 20 0">
+                <StackPanel Margin="100 0 00 0">
+                    <Button Name="TeachersTable" Content="Учителя" Click="Teachers_OnClick"></Button>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 20 20 0">
+                <StackPanel Margin="100 0 00 0">
+                    <Button Name="Back" Content="Выйти" Click="Back_OnClick"></Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

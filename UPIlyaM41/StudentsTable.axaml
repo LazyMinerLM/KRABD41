@@ -1,0 +1,35 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="UPIlyaM41.StudentsTable"
+        Title="StudentsTable">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Margin = "10 12 0 0">Поиск</TextBlock>
+                    <TextBox Name="Search" Width="200" Margin ="33 10 0 0"></TextBox>
+                </StackPanel>
+                <StackPanel Margin="10 13 0 10">
+                    <Button Name="SearchButton" Content="Поиск" Click="Search_OnClick"></Button>
+                </StackPanel>
+            </StackPanel> 
+            
+            <DataGrid Name="PlanGrid" x:CompileBindings="False" Margin ="10 20 0 0" Height="250">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding id}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Фамилия" Binding="{Binding surname}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Имя" Binding="{Binding name}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Класс" Binding="{Binding class_id}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel Orientation="Horizontal" Margin="10 20 20 0">
+                <StackPanel Margin="100 0 00 0">
+                    <Button Name="Back" Content="Назад" Click="Back_OnClick"></Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
